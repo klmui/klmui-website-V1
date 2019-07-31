@@ -38,13 +38,16 @@ header {
    min-height: 500px;
    width: 100%;
    background: #161415 url(https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat top center;
-   background-attachment: scroll; 
+   background-attachment: fixed; 
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
    -moz-background-size: cover;
    -o-background-size: cover;
+   @media (max-width: @iphone-screen) {
+      background-attachment: scroll;
+  }
 }
 
 @-webkit-keyframes fadeIn {
