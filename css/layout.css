@@ -28,9 +28,6 @@ body { background: #0f0f0f; }
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 header {
-   @media only screen {
-      background-attachment: scroll; 
-   }
    animation: fadeIn;
    -webkit-animation-duration: 3s;
             animation-duration: 3s;
@@ -42,13 +39,11 @@ header {
    width: 100%;
    background: #161415 url(https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat top center;
    background-attachment: fixed; 
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
-   -moz-background-size: cover;
-   -o-background-size: cover;
+   
 }
+
 
 
 @-webkit-keyframes fadeIn {
