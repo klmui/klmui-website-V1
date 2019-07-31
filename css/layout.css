@@ -294,10 +294,12 @@ ul#nav li.current a { color: #F06000; }
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
+   -moz-background-size: cover;
+   -o-background-size: cover;
 }
 
 @media screen and (max-width: 700px) {
-   resume{
+   #resume{
       background-attachment: scroll; 
    }
  }
@@ -708,10 +710,12 @@ call-to-action .button {
    min-height: 200px;
    width: 100%;
    overflow: hidden;
+   -moz-background-size: cover;
+   -o-background-size: cover;
 }
 
 @media screen and (max-width: 700px) {
-   testimonials{
+   #testimonials{
       background-attachment: scroll; 
    }
  }
