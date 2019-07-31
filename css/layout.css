@@ -28,6 +28,9 @@ body { background: #0f0f0f; }
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 header {
+   @media only screen {
+      background-attachment: scroll; 
+   }
    animation: fadeIn;
    -webkit-animation-duration: 3s;
             animation-duration: 3s;
@@ -45,10 +48,8 @@ header {
    overflow: hidden;
    -moz-background-size: cover;
    -o-background-size: cover;
-   @media (max-width: @iphone-screen) {
-      background-attachment: scroll;
-  }
 }
+
 
 @-webkit-keyframes fadeIn {
    0% {opacity: 0;}
