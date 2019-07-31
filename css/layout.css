@@ -296,6 +296,12 @@ ul#nav li.current a { color: #F06000; }
    overflow: hidden;
 }
 
+@media screen and (max-width: 700px) {
+   #resume{
+      background-attachment: scroll; 
+   }
+ }
+
 #resume a, #resume a:visited  { color: #11ABB0; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
@@ -703,6 +709,13 @@ call-to-action .button {
    width: 100%;
    overflow: hidden;
 }
+
+@media screen and (max-width: 700px) {
+   #testimonials{
+      background-attachment: scroll; 
+   }
+ }
+
 #testimonials .text-container {
    padding-top: 96px;
    padding-bottom: 66px;
