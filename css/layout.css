@@ -33,18 +33,18 @@ header {
             animation-duration: 3s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-   position: relative;
    height: 100%;
+   position: relative;
    min-height: 500px;
    width: 100%;
    background: #161415 url(https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat top center;
-   background-attachment: fixed; 
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
    -moz-background-size: cover;
    -o-background-size: cover;
+   z-index: 50;
 }
 
 @media screen and (max-width: 1030px) {
@@ -87,12 +87,10 @@ header .banner {
 
 header .banner-text { width: 100%; }
 header .banner-text h1 {
-   position: relative;
    font-family: sans-serif;
    text-transform: uppercase;
    font-size: 2em;
    letter-spacing: 4px;
-   overflow: hidden;
    background: linear-gradient(90deg, #000, #fff, #000);
    background-repeat: no-repeat;
    background-size: 80%;
@@ -175,7 +173,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 	 margin: 0;
 	 padding: 0;
 	 border: none;
-	 outline: none;
+    outline: none;
 }
 
 /* nav-wrap */
@@ -190,7 +188,8 @@ header .scrolldown a:hover { color: #11ABB0; }
    left: 0;
    top: 0;
 }
-.opaque { background-color: #333; }
+.opaque {   
+    background-color: #333; }
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn { display: none; }
@@ -314,6 +313,13 @@ ul#nav li.current a { color: #F06000; }
    text-transform: uppercase;
    letter-spacing: 1px;
 }
+
+@media screen and (max-width: 1030px) {
+   #resume h1{
+      background-attachment: scroll; 
+   }
+ }
+
 #resume h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
