@@ -1,6 +1,6 @@
 /*
 =====================================================================
-*   Ceevee v1.0 Layout Stylesheet
+*   eevee v1.0 Layout Stylesheet
 *   url: styleshout.com
 *   03-18-2014
 =====================================================================
@@ -229,7 +229,7 @@ ul#nav li a {
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
-
+ul#nav li a:hover {color: #F06000;}
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
@@ -284,13 +284,13 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background-image: url("https://images.pexels.com/photos/1089842/pexels-photo-1089842.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+   background-color: rgba(238, 238, 238, 0.959);
    background-attachment: fixed;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   padding-top: 90px;
-   padding-bottom: 72px;
+   padding-top: 0px;
+   padding-bottom: 60px;
    overflow: hidden;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -495,6 +495,7 @@ ul#nav li.current a { color: #F06000; }
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
+
 .portfolio-item .item-wrap {
    background: #fff;
    overflow: hidden;
@@ -533,6 +534,7 @@ ul#nav li.current a { color: #F06000; }
 .portfolio-item .item-wrap .link-icon {
    display: block;
    color: #fff;
+   /* not sure what the next 2 lines do */
    height: 30px;
    width: 30px;
    font-size: 18px;
@@ -556,6 +558,8 @@ ul#nav li.current a { color: #F06000; }
 }
 .portfolio-item .item-wrap img {
    vertical-align: bottom;
+   height: 200px;
+   width: 250px;
 }
 .portfolio-item .portfolio-item-meta { padding: 18px }
 .portfolio-item .portfolio-item-meta h5 {
